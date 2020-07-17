@@ -1,6 +1,7 @@
 class PortfoliosController < ApplicationController
   before_action :set_portfolios, only: [:edit, :show, :update, :destroy]
   layout "portfolio"
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
   
   def index
     @portfolio_items = Portfolio.all
@@ -24,6 +25,9 @@ class PortfoliosController < ApplicationController
   end
 
   def edit
+    if @portfolio_item.technologies.count <= 2
+      3.times { @portfolio_item.technologies.build }
+    end
   end
 
   def show

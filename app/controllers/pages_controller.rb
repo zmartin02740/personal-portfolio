@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def home
     @blogs = Blog.all
-    @portfolios = Portfolio.all
+    @skills = Skill.all
     @page_title = "Home | Proven Impacts."
   end
 
