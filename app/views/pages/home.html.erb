@@ -1,2 +1,7 @@
-<h1>Home Page</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>Hi, <%= current_user ? current_user.first_name : 'stranger danger' %></h1>
+
+Blog Posts
+<%= @blogs.inspect %>
+
+Portfolios
+<%= @portfolios.inspect %>
