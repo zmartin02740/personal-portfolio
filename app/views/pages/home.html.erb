@@ -1,7 +1,9 @@
-<h1>Hi, <%= current_user ? current_user.first_name : 'stranger danger' %></h1>
 
-Blog Posts
-<%= @blogs.inspect %>
 
-Portfolios
-<%= @skills.inspect %>
+  <div class="inner cover">
+    <h1 class="cover-heading">Zack Martin</h1>
+    <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <p class="lead">
+      <%= link_to "Learn More", about_path, class: "btn btn-lg btn-secondary" %>
+    </p>
+  </div>
