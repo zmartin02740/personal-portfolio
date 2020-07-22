@@ -4,6 +4,16 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "ezcater-zack.jpeg", class: "profile-img"%>
+        <button
+          class="btn btn-lg btn-primary btn-block"
+          type="button"
+          data-toggle="collapse"
+          data-target="#skills"
+          aria-expanded="false"
+          aria-controler="skills"
+          style="margin: 10px 0;">
+          Skills
+          </button>
         <div class="collapse" id="skills">
           <div class="skills">
             <% @skills.each do |skill| %>
@@ -45,15 +55,6 @@
             aria-controler="education">
             Education
           </button>
-          <button
-            class="btn btn-lg btn-primary"
-            type="button"
-            data-toggle="collapse"
-            data-target="#skills"
-            aria-expanded="false"
-            aria-controler="skills">
-            Skills
-          </button>
           <p>
             <div class="collapse" id="jobHistory">
               <div class="card card-block p-2 m-1">
@@ -83,5 +84,7 @@
         </p>
       </div>
     </div>
+        <center><div>To Improve Is To Change.</div></center>
+        <center><div>To Be Perfect Is To Change Often.</div></center>
   </div>
 </div>
