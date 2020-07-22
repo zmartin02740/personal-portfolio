@@ -212,3 +212,18 @@ body {
     width: 100%;
     text-align: center;
  }
+
+ .app-card-container {
+   color: black;
+   text-align: left;
+ }
+
+ .app-card-container > .card {
+   padding: 40px;
+ }
+
+ .profile-img {
+   border: 2px solid gray;
+   width: 100%;
+   margin: 0 auto;
+ }
