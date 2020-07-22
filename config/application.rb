@@ -13,6 +13,7 @@ require "action_text/engine"
 require "action_view/railtie"
 require "action_cable/engine"
 require "sprockets/railtie"
+require "dotenv-rails"
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
@@ -31,5 +32,6 @@ module DevcampPortfolio
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.assets.paths << "#{Rails.root}/app/assets/videos"
   end
 end
