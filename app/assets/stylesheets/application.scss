@@ -187,6 +187,8 @@ body {
  .app-nav span {
    margin-left: 15px;
    margin-right: 15px;
+
+   color: black;
  }
 
  #background {
@@ -226,4 +228,8 @@ body {
    border: 2px solid gray;
    width: 100%;
    margin: 0 auto;
+ }
+
+ .zIndex {
+   z-index: 100;
  }

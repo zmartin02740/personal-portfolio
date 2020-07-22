@@ -6,7 +6,6 @@ class PagesController < ApplicationController
   end
 
   def about
-    # @skills = Skill.all
     @skills = [
       {
         title: "Javascript",
@@ -18,39 +17,39 @@ class PagesController < ApplicationController
         },
         {
         title: "Ruby",
-        percent_utilized: 85
+        percent_utilized: 75
         },
         {
         title: "Python",
-        percent_utilized: 85
+        percent_utilized: 70
         },
         {
         title: "SQL",
-        percent_utilized: 85
+        percent_utilized: 55
         },
         {
         title: "PostgreSQL",
-        percent_utilized: 85
+        percent_utilized: 70
         },
         {
         title: "Ruby on Rails",
-        percent_utilized: 85
+        percent_utilized: 65
         },
         {
         title: "MongoDB",
-        percent_utilized: 85
+        percent_utilized: 45
         },
         {
         title: "AWS S3",
-        percent_utilized: 85
+        percent_utilized: 50
         },
         {
         title: "React Native",
-        percent_utilized: 85
+        percent_utilized: 40
         },
         {
         title: "Sketch",
-        percent_utilized: 85
+        percent_utilized: 66
         }
       ]
   end
